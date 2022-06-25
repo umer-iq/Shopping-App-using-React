@@ -1,8 +1,9 @@
 import React,{Component} from 'react'
+import Register from '../../componenets/Signin/register/Register'
 import './styles.scss'
 const Registration = () => {
   return (
-    <div>Registration</div>
+    <div><Register/></div>
   )
 }
 

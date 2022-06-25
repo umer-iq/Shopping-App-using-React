@@ -5,6 +5,7 @@ import Homepage from './pages/Homepage';
 import Registration from './pages/Registration';
 import {Route,Routes} from 'react-router-dom'
 import Footer from './componenets/Footer';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
 <Routes>
      <Route  path='/' element={<Homepage/>}/>
      <Route path='/registration' element={<Registration/>}/>
+     <Route path='/login' element={<Login/>}/>
      
 </Routes>
     </div>
