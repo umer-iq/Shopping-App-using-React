@@ -3,23 +3,40 @@ import Header from './componenets/header';
 import './default.scss'
 import Homepage from './pages/Homepage';
 import Registration from './pages/Registration';
-import {Route,Routes} from 'react-router-dom'
+import {Route,Switch} from 'react-router-dom'
 import Footer from './componenets/Footer';
 import Login from './pages/Login';
+import HomepageLayout from './layouts/Homepagelayout';
+import Mainlayout from './layouts/Mainlayout';
 
 function App() {
   return (
     <div className='App' >
-    <Header/>
+    
     <div className='main'>
-<Routes>
-     <Route  path='/' element={<Homepage/>}/>
-     <Route path='/registration' element={<Registration/>}/>
-     <Route path='/login' element={<Login/>}/>
+
+<Switch>
+        <Route exact path="/" render={() => (
+          <HomepageLayout>
+            <Homepage />
+          </HomepageLayout>
+        )}
+        />
+     <Route path="/registration" render={() => (
+          <Mainlayout>
+            <Registration />
+          </Mainlayout>
+        )} />
+     <Route path="/login"
+          render={() => (
+            <Mainlayout>
+              <Login />
+            </Mainlayout>
+          )} />
      
-</Routes>
+</Switch>
     </div>
-    <Footer/>
+   
     </div>
   );
 }

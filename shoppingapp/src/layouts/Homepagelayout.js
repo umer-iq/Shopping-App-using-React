@@ -1,17 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Header from '../componenets/header'
+import React from 'react';
+import Header from './../components/Header';
+import Footer from './../components/Footer';
 
-const Homepagelayout = props => {
+const HomepageLayout = props => {
   return (
-    <div className='fullHeight'>
-        <Header/>
-        <div className='main'>
-            {props.childern}
-        </div>
+    <div className="fullHeight">
+      <Header {...props} />
+      {props.children}
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-
-export default Homepagelayout
+export default HomepageLayout;
