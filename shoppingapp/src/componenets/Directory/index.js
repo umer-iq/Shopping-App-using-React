@@ -7,8 +7,8 @@ const Directory = () => {
   return (
     <div className='directory'>
        <div className='wrap'>
-        <div className='item' style={{background:`url(${shopmen})`,width:'700px'}}><a href='/'>Shop Men </a></div>
-        <div className='item' style={{background:`url(${shopwomen})`,width:'610px'}}><a href='/'>Shop Women </a></div>
+        <div className='item' style={{background:`url(${shopmen})`,width:'700px',top:'-450px'}}><a href='/'>Shop Men </a></div>
+        <div className='item' style={{background:`url(${shopwomen})`,width:'610px',top:'-450px'}}><a href='/'>Shop Women </a></div>
     </div>
     </div>
   )

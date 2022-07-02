@@ -1,13 +1,13 @@
 import React from 'react';
-import Header from './../components/Header';
-import Footer from './../components/Footer';
+import Header from '..//componenets/header/index';
+import Footer from '..//componenets/Footer/index';
 
 const HomepageLayout = props => {
   return (
     <div className="fullHeight">
       <Header {...props} />
       {props.children}
-      <Footer />
+    {/* <Footer />   */}
     </div>
   );
 };

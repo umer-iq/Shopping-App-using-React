@@ -1,5 +1,5 @@
 
-import { Button } from '../forms/button'
+import  Button  from '../forms/button'
 import './styles.scss'
 import { logout, signInWithGoogle } from '../../firebase/utils'
 import { Link } from 'react-router-dom'
@@ -22,10 +22,11 @@ export default class Signin extends Component {
         </div>
         <div className='formwrap'>
             <form onSubmit={this.handleSubmit}>
+            
                 <div className='socialSignin'>
                     <div className='row'>
                 <Button onClick={signInWithGoogle}>Sign in with Google </Button>
-                        <Button className='my-3' onClick={logout} >Log out</Button>
+                        <Button  onClick={logout} >Log out</Button>
                         
                     </div>
                 </div>
